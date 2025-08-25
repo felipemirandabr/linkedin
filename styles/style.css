@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+:root {
+    --cor-fundo: rgba(0, 0, 0, 1);
+    --cor-fundo-ii: rgba(27, 34, 38, 1);
+    --cor-fundo-iii: rgba(56, 67, 79, 1);
+    --cor-texto: rgba(255, 255, 255, 1);
+    --cor-texto-ii: rgba(255, 255, 255, 0.6);
+    --cor-texto-iii: rgba(0, 0, 0, 0.75);
+    --cor-destaque: rgba(112, 181, 249, 1);
+    --fonte: Roboto, arial, sans-serif;
+    --fonte-ii: Inter, arial, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
