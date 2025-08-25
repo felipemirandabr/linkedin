@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.card-central__idiomas {
+    padding: 10px 24px 16px 24px;
+}
+
+.card-central__container__item {
+    margin-top: 12px;
+}
+
+.card-central__container__item__titulo {
+    color: var(--cor-texto-ii);
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 6px;
+}
+
+.card-central__idiomas .card-central__container__linha {
+    margin: 16px 0;
+}

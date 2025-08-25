@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.card-central__sobre {
+    padding: 16px 24px;
+}
+
+.card-central__sobre .card-central__paragrafo {
+    color: var(--cor-texto-ii);
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 8px;
+}

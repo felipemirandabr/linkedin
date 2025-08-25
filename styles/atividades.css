@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.card-central__atividades {
+    padding: 8px 24px;
+}
+
+.card-central__atividades .card-central__container {
+    margin-top: 13px;
+}
+
+.card-central__atividades .card-central__container__item__descricao {
+    margin-bottom: 8px;
+}
+
+.card-central__container__item__container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.card-central__container__item__container__container {
+    height: 64px;
+    width: 64px;
+    flex: 0 0 64px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-central__container__item__container__container__foto {
+    height: 100%;
+    left: -20%;
+    position: absolute;
+}
+
+.card-central__container__item__container__paragrafo {
+    flex: 1 1 auto;
+    line-height: 20px;
+    color: var(--cor-texto-ii);
+}
+
+.card-central__linha {
+    border: 1px solid var(--cor-texto);
+    margin-right: -24px;
+    margin-left: -24px;
+}
+
+.card-central__link {
+    font-weight: 500;
+    font-size: .875em;
+    color: var(--cor-texto);
+    text-align: center;
+    display: block;
+    padding: 2px;
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+.card-central__formacao {
+    padding: 10px 24px 24px 24px;
+}
+
+.card-central__formacao .card-central__container {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.card-central__formacao .card-central__container__foto {
+    width: 48px;
+    height: 48px;
+}
+
+.card-central__formacao .card-central__container__legenda__titulo {
+    color: var(--cor-texto-ii);
+    font-size: 1em;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+
+.card-central__formacao .card-central__container__legenda__subtitulo {
+    color: var(--cor-texto-iv);
+    padding-bottom: 4px;
+}

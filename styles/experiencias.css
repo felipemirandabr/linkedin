@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.card-central__experiencias {
+    padding: 16px 24px 24px 24px;
+}
+
+.card-central__container__container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.card-central__container__container__foto {
+    width: 48px;
+    height: 48px;
+}
+
+.card-central__container__container__legenda__titulo {
+    color: var(--cor-texto-ii);
+    font-weight: 600;
+    font-size: 1em;
+    padding-bottom: 4px;
+}
+
+.card-central__container__lista__item {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 9px 0 0 20px;
+    color: var(--cor-texto-iv);
+}
+
+span.marcador {
+    font-size: 9px;
+}
+.card-central__container__lista__item__titulo {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 -2px 4px 0;
+}
+
+.card-central__container__lista__dados {
+    border-left: 1px solid var(--cor-texto);
+    margin-left: 24px;
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}

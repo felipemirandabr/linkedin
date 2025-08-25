@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.card-central__destaques {
+    padding: 22px 16px;
+    margin-bottom: 14px;
+}
+
+.card-central__destaques > .card-central__titulo {
+    margin: 0 0 8px 8px;
+}
+
+.card-central__destaques > .card-central__container {
+    display: flex;
+    gap: 17px;
+    justify-content: space-evenly;
+}
+
+.card-central__destaques .card-central__container__item {
+    border: 1px solid var(--cor-texto);
+    border-radius: 8px;
+    height: 236px;
+} 
+
+.card-central__destaques .card-central__container__item__descricao {
+    margin: 12px 0 4px 14px;
+    font-size: .75em;;
+}
+
+.card-central__destaques .card-central__container__item__legenda {
+    margin: 0 0 8px 14px;
+    color: var(--cor-texto-ii);
+}
+
+.card-central__destaques .card-central__container__item__container {
+    height: 152px;
+    width: 238px;
+    overflow: hidden;
+}
+
+.card-central__destaques .card-central__container__item__container__foto {
+    height: 100%;
+}

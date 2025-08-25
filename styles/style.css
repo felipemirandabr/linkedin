@@ -4,18 +4,116 @@
     --cor-fundo: rgba(0, 0, 0, 1);
     --cor-fundo-ii: rgba(27, 34, 38, 1);
     --cor-fundo-iii: rgba(56, 67, 79, 1);
-    --cor-texto: rgba(255, 255, 255, 1);
-    --cor-texto-ii: rgba(255, 255, 255, 0.6);
+    --cor-texto: rgba(255, 255, 255, 0.6);
+    --cor-texto-ii: rgba(255, 255, 255, 1);
     --cor-texto-iii: rgba(0, 0, 0, 0.75);
+    --cor-texto-iv: rgba(255, 255, 255, 0.9);
     --cor-destaque: rgba(112, 181, 249, 1);
-    --fonte: Roboto, arial, sans-serif;
-    --fonte-ii: Inter, arial, sans-serif;
+    --fonte: 'Roboto', arial, sans-serif;
+    --fonte-ii: 'Inter', arial, sans-serif;
+    --cor-reacao-i: rgba(55, 143, 233, 1);
+    --cor-reacao-ii: rgba(109, 174, 79, 1);
+    --cor-reacao-iii: rgba(223, 112, 77, 1);
+    --cor-marcador: rgba(217, 217, 217, 1);
+
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
     font-family: var(--fonte);
+    font-size: .875em;
+    display: grid;
+    grid-template: 
+      "header header header header" auto
+      ". main aside ." 1fr / auto 780px 320px auto;
+    gap: 24px 32px;
+    padding-bottom: 53px;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+section {
+  background-color: var(--cor-fundo-ii);
+  border-radius: 16px;
+  margin-bottom: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-destaque);
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+
+.card-central__titulo {
+  font-size: 1.25em;
+  color: var(--cor-texto-ii);
+  font-weight: 600;
+  padding: 12px 0 8px 0;
+}
+
+.card-central__container__linha {
+  border: 1px solid var(--cor-texto);
+  margin-bottom: 8px;
+}
+
+.card-central__container__item__dados {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+}
+
+.card-central__container__item__dados__reacoes {
+  position: relative;
+}
+
+.reacao-1, .reacao-2, .reacao-3 {
+  position: absolute;
+  font-size: 18px;
+}
+
+.reacao-1 {
+  color: var(--cor-reacao-i);
+  z-index: 1;
+}
+
+.reacao-2 {
+  color: var(--cor-reacao-ii);
+  z-index: 2;
+  left: 7px;
+}
+
+.reacao-3 {
+  color: var(--cor-reacao-iii);
+  z-index: 3;
+  left: 14px;
+}
+
+.card-central__container__item__dados__reacoes__paragrafo {
+  margin: 3px 0 0 36px;
+}
+
+.card-central__container__item__dados__comentarios__paragrafo {
+  margin: 3px 0 0 0;
 }
 
 .material-symbols-outlined {

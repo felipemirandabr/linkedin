@@ -1,0 +1,102 @@
+@charset "UTF-8";
+.card-central__perfil {
+    overflow: hidden;
+    height: 468px;
+}
+
+.card-central__capa {
+    background: url(../assets/capa.png) left -143px no-repeat;
+    background-size: cover;
+    height: 230px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-central__perfil > .card-central__container{
+    position: absolute;
+    z-index: 2;
+    margin-top: -118px;
+    display: flex;
+    gap: 129px;
+    padding: 24px;
+}
+
+.card-central__container__info__foto {
+    width: 160px;
+    border-radius: 50%;
+    border: 4px solid var(--cor-fundo-ii);
+}
+
+.card-central__container__info__titulo {
+    color: var(--cor-texto-ii);
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.card-central__container__info__subtitulo {
+    color: var(--cor-texto-ii);
+    font-size: 1em;
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+.card-central__container__info__paragrafo{
+    margin-bottom: 4px;
+}
+
+.card-central__container__info__botoes {
+    display: flex;
+    gap: 7px;
+}
+
+.card-central__container__info__botoes__botao {
+    border-radius: 16px;
+    width: 128px;
+    height: 32px;
+    border: none;
+    font-weight: 500;
+    font-family: var(--fonte);
+    font-size: .875em;
+    color: var(--cor-texto-iii);
+    background-color: var(--cor-destaque);
+}
+
+.card-central__container__info__botoes__botao:hover {
+    color: var(--cor-fundo);
+    background-color: var(--cor-texto-ii);
+}
+
+.card-central__container__info__botoes__botao-secundario {
+    border: 1px solid var(--cor-destaque);
+    color: var(--cor-destaque);
+    background-color: var(--cor-fundo-ii);
+}
+
+.card-central__container__info__botoes__botao-secundario:hover {
+    color: var(--cor-fundo-ii);
+    background-color: var(--cor-destaque);
+}
+
+.card-central__container__extra {
+    margin-top: 168px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-central__container__extra__item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.card-central__container__extra__item__foto {
+    width: 32px;
+}
+
+.card-central__container__extra__item__titulo {
+    color: var(--cor-texto-ii);
+    font-size: 1em;
+    font-weight: 600;
+}

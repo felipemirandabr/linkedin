@@ -1,17 +1,65 @@
 @charset "UTF-8";
 
-header {
+.cabecalho {
   background-color: var(--cor-fundo-ii);
-  display: flex;
-  align-items: center;
+  color: var(--cor-texto-ii);
 }
 
-nav {
+
+.cabecalho__container {
   display: flex;
-  align-items: center;
+  width: 1132px;
+  margin: auto;
+  gap: 92px;
 }
 
-.container-icone {
+.cabecalho__container__logo-pesquisa {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.cabecalho__container__logo-pesquisa__pesquisa {
+  background-color: var(--cor-fundo-iii);
+  color: var(--cor-texto-ii);
+  width: 280px;
+  height: 34px;
+  border-radius: 4px;
+  border: none;
+}
+.cabecalho__container__logo-pesquisa__pesquisa::placeholder {
+  font-family: var(--fonte);
+  height: 18px;
+  font-weight: 400;
+  font-size: .875em;
+  color: var(--cor-texto-ii);
+  background: url(../assets/pesquisa.png) 6px no-repeat;
+  background-size: contain;
+  padding-left: 30px;
+}
+
+.cabecalho__container__menu {
+  display: flex;
+  text-align: center;
+}
+
+.cabecalho__container__menu__item {
+  color: var(--cor-texto-ii);
+}
+
+.cabecalho__container__menu__item:hover {
+  color: var(--cor-destaque);
+}
+
+.cabecalho__container__menu__item__container {
+  width: 80px;
+  padding: 7px 0;
+}
+
+.cabecalho__container__menu__item__container-especial {
+  border-left: 1px solid var(--cor-texto);
+}
+
+.cabecalho__container__menu__item__container__paragrafo {
+  font-size: .75em;
 }

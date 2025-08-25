@@ -6,301 +6,407 @@
     <title>Linkedin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/perfil.css">
+    <link rel="stylesheet" href="styles/destaques.css">
+    <link rel="stylesheet" href="styles/atividades.css">
+    <link rel="stylesheet" href="styles/sobre.css">
+    <link rel="stylesheet" href="styles/experiencias.css">
+    <link rel="stylesheet" href="styles/formacao.css">
+    <link rel="stylesheet" href="styles/idiomas.css">
+    <link rel="stylesheet" href="styles/card-lateral.css">
+    <link rel="stylesheet" href="styles/media-queries.css" media="screen and (max-width: 768px)">
 
 </head>
 <body>
-    <header>
-        <div id="logo-e-pesquisa">
-            <img src="assets/vector.png" alt="Logo do Linkedin">
-            <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <div class="cabecalho__container__logo-pesquisa">
+                <img class="cabecalho__container__logo-pesquisa__logo" src="assets/vector.png" alt="Logo do Linkedin">
+                <input  class="cabecalho__container__logo-pesquisa__pesquisa" type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
+            </div>
+            <nav class="cabecalho__container__menu">
+                <a href="#" class="cabecalho__container__menu__item">
+                    <div class="cabecalho__container__menu__item__container">
+                        <span class="material-symbols-outlined">home</span>
+                        <p class="cabecalho__container__menu__item__container__paragrafo">Início</p>
+                    </div>
+                </a>
+                <a href="#" class="cabecalho__container__menu__item">
+                    <div class="cabecalho__container__menu__item__container">
+                        <span class="material-symbols-outlined">group</span>
+                        <p class="cabecalho__container__menu__item__container__paragrafo">Minha Rede</p>
+                    </div>
+                </a>
+                <a href="#" class="cabecalho__container__menu__item">
+                    <div class="cabecalho__container__menu__item__container">
+                        <span class="material-symbols-outlined">business_center</span>
+                        <p class="cabecalho__container__menu__item__container__paragrafo">Vagas</p>
+                    </div>
+                </a>
+                <a href="#" class="cabecalho__container__menu__item">
+                    <div class="cabecalho__container__menu__item__container">
+                        <span class="material-symbols-outlined">sms</span>
+                        <p class="cabecalho__container__menu__item__container__paragrafo">Mensagens</p>
+                    </div>
+                </a>
+                <a href="#" class="cabecalho__container__menu__item">
+                    <div class="cabecalho__container__menu__item__container">
+                        <span class="material-symbols-outlined">notifications</span>
+                        <p class="cabecalho__container__menu__item__container__paragrafo">Notificações</p>
+                    </div>
+                </a>
+                <a href="#" class="cabecalho__container__menu__item">
+                    <div class="cabecalho__container__menu__item__container cabecalho__container__menu__item__container-especial">
+                        <span class="material-symbols-outlined">grid_on</span>
+                        <p class="cabecalho__container__menu__item__container__paragrafo">Soluções</p>
+                    </div>
+                </a>
+            </nav>
         </div>
-        <nav>
-            <div class="container-icone">
-                <span class="material-symbols-outlined">
-                home
-            </span>
-            <p class="etiqueta-nav">Início</p>
-            </div>
-            <div class="container-icone">
-                <span class="material-symbols-outlined">
-                group
-            </span>
-            <p class="etiqueta-nav">Minha Rede</p>
-            </div>
-            <div class="container-icone">
-                <span class="material-symbols-outlined">
-                business_center
-            </span>
-            <p class="etiqueta-nav">Vagas</p>
-            </div>
-            <div class="container-icone">
-                <span class="material-symbols-outlined">
-                sms
-            </span>
-            <p class="etiqueta-nav">Mensagens</p>
-            </div>
-            <div class="container-icone">
-                <span class="material-symbols-outlined">
-                notifications
-            </span>
-            <p class="etiqueta-nav">Notificações</p>
-            </div>
-            <div class="container-icone">
-                <span class="material-symbols-outlined">
-                grid_on
-            </span>
-            <p class="etiqueta-nav">Soluções</p>
-            </div>
-        </nav>
     </header>
     <main>
-        <section class="card-central" id="perfil">
-            <div id="perfil-esquerda">
-                <img src="assets/image-2.png" class="foto-perfil" alt="Foto de Perfil">
-                <h1>Nome Sobrenome</h1>
-                <h2>Desenvolvedora | HTML | CSS | Typescript | Node</h2>
-                <p>Fala sobre #javascript, #frontend, #reactjs, e #backend</p>
-                <p>Cidade, estado e país • <a href="#">informações de contato</a></p>
-                <p><a href="#">??? seguidores</a> • <a href="#">??? conexões</a></p>
-                <div class="container-botoes">
-                    <a href="#">Mensagem</a>
-                    <a href="#">Mais</a>
+        <section class="card-central card-central__perfil">
+            <div class="card-central__capa">
+            </div>
+            <div class="card-central__container">
+                <div class="card-central__container__info">
+                    <img class="card-central__container__info__foto" src="assets/image-2.png" alt="Foto de Perfil">
+                    <h1 class="card-central__container__info__titulo">Nome Sobrenome</h1>
+                    <h2 class="card-central__container__info__subtitulo">Desenvolvedora | HTML | CSS | Typescript | Node</h2>
+                    <p class="card-central__container__info__paragrafo">Fala sobre #javascript, #frontend, #reactjs, e #backend</p>
+                    <p class="card-central__container__info__paragrafo">Cidade, estado e país • <a href="#">informações de contato</a>
+                    </p>
+                    <p class="card-central__container__info__paragrafo">
+                        <a class="card-central__container__info__paragrafo__link" href="#">??? seguidores</a> • <a
+                            class="card-central__container__info__paragrafo__link" href="#">??? conexões</a>
+                    </p>
+                    <div class="card-central__container__info__botoes">
+                        <button class="card-central__container__info__botoes__botao">Mensagem</button>
+                        <button class="card-central__container__info__botoes__botao card-central__container__info__botoes__botao-secundario">Mais</button>
+                    </div>
+                </div>
+                <div class="card-central__container__extra">
+                    <div class="card-central__container__extra__item">
+                        <img class="card-central__container__extra__item__foto" src="assets/rectangle-12.png" alt="Foto da Empresa">
+                        <h2 class="card-central__container__extra__item__titulo">Empresa</h2>
+                    </div>
+                    <div class="card-central__container__extra__item">
+                        <img class="card-central__container__extra__item__foto" src="assets/rectangle-13.png"
+                            alt="Foto da Instituição de Ensino">
+                        <h2 class="card-central__container__extra__item__titulo">Instituição de Ensino</h2>
+                    </div>
                 </div>
             </div>
-            <div id="perfil-direita">
-                <div id="foto-texto"><img src="assets/rectangle-12.png" alt="Foto da Empresa">Empresa</div>
-                <div id="foto-texto"><img src="assets/rectangle-13.png" alt="Foto da Instituição de Ensino">Instituição de Ensino</div>
-            </div>
         </section>
-        <section class="card-central" id="destaques">
-            <h2>Destaques</h2>
-            <div clas="container-destaques">
-                <div class="card-destaque">p
-                    <p>Publicação</p>
-                    <h3>Legenda da primeira publicaçã...</h3>
-                    <img src="assets/capa.png" alt="Foto da Publicação">
-                    <div class="container-reacoes-comentarios">
-                        <div class="reacoes">
-                            <span class="circle-1"></span>
-                            <span class="circle-2"></span>
-                            <span class="circle-3"></span>
-                            <p>124</p>
-                        </div>
-                        <div class="comentarios">
-                            5 comentários
-                        </div>
+        <section class="card-central card-central__destaques">
+            <h2 class="card-central__titulo">Destaques</h2>
+            <div class="card-central__container">
+                <div class="card-central__container__item">
+                    <p class="card-central__container__item__descricao">Publicação</p>
+                    <h3 class="card-central__container__item__legenda">Legenda da primeira publicaçã...</h3>
+                    <div class="card-central__container__item__container">
+                        <img class="card-central__container__item__container__foto" src="assets/capa.png" alt="Foto da Publicação">
                     </div>
-                    <div class="card-destaque">p
-                    <p>Publicação</p>
-                    <h3>Legenda da segunda publicaçã...</h3>
-                    <img src="assets/capa.png" alt="Foto da Publicação">
-                    <div class="container-reacoes-comentarios">
-                        <div class="reacoes">
-                            <span class="circle-1"></span>
-                            <span class="circle-2"></span>
-                            <span class="circle-3"></span>
-                            <p>124</p>
+                    <div class="card-central__container__item__dados">
+                        <div class="card-central__container__item__dados__reacoes">
+                            <span class="material-symbols-outlined reacao-1">circle</span>
+                            <span class="material-symbols-outlined reacao-2">circle</span>
+                            <span class="material-symbols-outlined reacao-3">circle</span>
+                            <p class="card-central__container__item__dados__reacoes__paragrafo">124</p>
                         </div>
-                        <div class="comentarios">
-                            5 comentários
-                        </div>
-                    </div>
-                    <div class="card-destaque">p
-                    <p>Publicação</p>
-                    <h3>Legenda da terceira publicaçã...</h3>
-                    <img src="assets/capa.png" alt="Foto da Publicação">
-                    <div class="container-reacoes-comentarios">
-                        <div class="reacoes">
-                            <span class="circle-1"></span>
-                            <span class="circle-2"></span>
-                            <span class="circle-3"></span>
-                            <p>124</p>
-                        </div>
-                        <div class="comentarios">
-                            5 comentários
+                        <div class="card-central__container__item__dados__comentarios">
+                            <p class="card-central__container__item__dados__comentarios__paragrafo">5 comentários</p>
                         </div>
                     </div>
                 </div>
-
-            </div>
-        </section>
-        <section class="card-central" id="atividades">
-            <h2>Atividades</h2>
-            <p><a href="#">??? seguidores</a></p>
-            <div class="card-atividades">
-                <p>Nome Sobrenome publicou isso • 1 sem</p>
-                <div class="foto-atividade">
-                    <img src="assets/capa.png" alt="Foto da Atividade">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu...</p>
+                <div class="card-central__container__item">
+                    <p class="card-central__container__item__descricao">Publicação</p>
+                    <h3 class="card-central__container__item__legenda">Legenda da segunda publicaçã...</h3>
+                    <div class="card-central__container__item__container">
+                        <img class="card-central__container__item__container__foto" src="assets/capa.png" alt="Foto da Publicação">
+                    </div>
+                    <div class="card-central__container__item__dados">
+                        <div class="card-central__container__item__dados__reacoes">
+                            <span class="material-symbols-outlined reacao-1">circle</span>
+                            <span class="material-symbols-outlined reacao-2">circle</span>
+                            <span class="material-symbols-outlined reacao-3">circle</span>
+                            <p class="card-central__container__item__dados__reacoes__paragrafo">124</p>
+                        </div>
+                        <div class="card-central__container__item__dados__comentarios">
+                            <p class="card-central__container__item__dados__comentarios__paragrafo">5 comentários</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="container-reacoes-comentarios">
-                        <div class="reacoes">
-                            <span class="circle-1"></span>
-                            <span class="circle-2"></span>
-                            <span class="circle-3"></span>
-                            <p>124</p>
-                        </div>
-                        <div class="comentarios">
-                            5 comentários
-                        </div>
+                <div class="card-central__container__item">
+                    <p class="card-central__container__item__descricao">Publicação</p>
+                    <h3 class="card-central__container__item__legenda">Legenda da terceira publicaçã...</h3>
+                    <div class="card-central__container__item__container">
+                        <img class="card-central__container__item__container__foto" src="assets/capa.png" alt="Foto da Publicação">
                     </div>
-            </div>
-            <hr>
-            <div class="card-atividades">
-                <p>Nome Sobrenome publicou isso • 1 sem</p>
-                <div class="foto-atividade">
-                    <img src="assets/capa.png" alt="Foto da Atividade">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu...</p>
-                </div>
-                <div class="container-reacoes-comentarios">
-                        <div class="reacoes">
-                            <span class="circle-1"></span>
-                            <span class="circle-2"></span>
-                            <span class="circle-3"></span>
-                            <p>124</p>
+                    <div class="card-central__container__item__dados">
+                        <div class="card-central__container__item__dados__reacoes">
+                            <span class="material-symbols-outlined reacao-1">circle</span>
+                            <span class="material-symbols-outlined reacao-2">circle</span>
+                            <span class="material-symbols-outlined reacao-3">circle</span>
+                            <p class="card-central__container__item__dados__reacoes__paragrafo">124</p>
                         </div>
-                        <div class="comentarios">
-                            5 comentários
-                        </div>
-                    </div>
-            </div>
-            <hr class="fora-a-fora">
-            <a href="#" class="link-secundario">Exibir todas as atividades</a>
-        </section>
-        <section class="card-central" id="sobre">
-            <h2>Sobre</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-        </section>
-        <section class="card-central" id="experiencias">
-            <h2>Experiências</h2>
-            <div class="card-experiencias">
-                <img src="assets/rectangle-12.png" alt="Foto da experiência">
-                <h3>Empresa</h3>
-                <p>1 a 7 m</p>
-                <div class="lista-experiencias">
-                    <div class="item-experiencia">
-                        <span class="material-symbols-outlined">
-                            circle
-                        </span>
-                        <h3>Fullstack Developer</h3>
-                        <div class="dados-experiencia">
-                            <h4>Tempo integral</h4>
-                            <p>jan de 2022 - o momento • 5 meses</p>
-                            <p>Cidade, estado e país</p>
-                        </div>
-                    </div>
-                    <div class="item-experiencia">
-                        <span class="material-symbols-outlined">
-                            circle
-                        </span>
-                        <h3>Fullstack Developer (JR)</h3>
-                        <div class="dados-experiencia">
-                            <h4>Tempo integral</h4>
-                            <p>jun de 2021 - jan de 2022 • 8 meses</p>
-                            <p>Cidade, estado e país</p>
-                        </div>
-                    </div>
-                    <div class="item-experiencia">
-                        <span class="material-symbols-outlined">
-                            circle
-                        </span>
-                        <h3>Front-end Developer</h3>
-                        <div class="dados-experiencia">
-                            <h4>Tempo integral</h4>
-                            <p>jan de 2021 - jun de 2021 • 6 meses</p>
-                            <p>Cidade, estado e país</p>
+                        <div class="card-central__container__item__dados__comentarios">
+                            <p class="card-central__container__item__dados__comentarios__paragrafo">5 comentários</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="card-central" id="formacao">
-            <h2>Formação Acadêmica</h2>
-            <div class="card-formacao">
-                <img src="assets/rectangle-13.png" alt="Foto da formação acadêmica">
-                <h3>Instituição de ensino</h3>
-                <h4>Nome do curso</h4>
-                <p>2015 a 2019</p>
+        <section class="card-central card-central__atividades">
+            <h2 class="card-central__titulo">Atividades</h2>
+            <p class="card-central__paragrafo">
+                <a class="card-central__paragrafo__link" href="#">??? seguidores</a>
+            </p>
+            <div class="card-central__container">
+                <div class="card-central__container__item">
+                    <p class="card-central__container__item__descricao">Nome Sobrenome publicou isso • 1 sem</p>
+                    <div class="card-central__container__item__container">
+                        <div class="card-central__container__item__container__container">
+                            <img class="card-central__container__item__container__container__foto" src="assets/capa.png"
+                            alt="Foto da Atividade">
+                        </div>
+                        <p class="card-central__container__item__container__paragrafo">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu...
+                        </p>
+                    </div>
+                    <div class="card-central__container__item__dados">
+                        <div class="card-central__container__item__dados__reacoes">
+                            <span class="material-symbols-outlined reacao-1">circle</span>
+                            <span class="material-symbols-outlined reacao-2">circle</span>
+                            <span class="material-symbols-outlined reacao-3">circle</span>
+                            <p class="card-central__container__item__dados__reacoes__paragrafo">124</p>
+                        </div>
+                        <div class="card-central__container__item__dados__comentarios">
+                            <p class="card-central__container__item__dados__comentarios__paragrafo">5 comentários</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="card-central__container__linha">
+                <div class="card-central__container__item">
+                    <p class="card-central__container__item__descricao">Nome Sobrenome compartilhou isso • 1 sem</p>
+                    <div class="card-central__container__item__container">
+                        <div class="card-central__container__item__container__container">
+                            <img class="card-central__container__item__container__container__foto" src="assets/capa.png"
+                            alt="Foto da Atividade">
+                        </div>
+                        <p class="card-central__container__item__container__paragrafo">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu...
+                        </p>
+                    </div>
+                    <div class="card-central__container__item__dados">
+                        <div class="card-central__container__item__dados__reacoes">
+                            <span class="material-symbols-outlined reacao-1">circle</span>
+                            <span class="material-symbols-outlined reacao-2">circle</span>
+                            <span class="material-symbols-outlined reacao-3">circle</span>
+                            <p class="card-central__container__item__dados__reacoes__paragrafo">124</p>
+                        </div>
+                        <div class="card-central__container__item__dados__comentarios">
+                            <p class="card-central__container__item__dados__comentarios__paragrafo">5 comentários</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="card-central__linha">
+            <a class="card-central__link" href="#">Exibir todas as atividades</a>
         </section>
-        <section class="card-central" id="idiomas">
-            <h2>Idiomas</h2>
-            <h3>Português</h3>
-            <p>Fluente ou nativo</p>
-            <hr>
-            <h3>Inglês</h3>
-            <p>Intermediário</p>
+        <section class="card-central card-central__sobre">
+            <h2 class="card-central__titulo">Sobre</h2>
+            <p class="card-central__paragrafo">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur
+            </p>
+        </section>
+        <section class="card-central card-central__experiencias">
+            <h2 class="card-central__titulo">Experiências</h2>
+            <div class="card-central__container">
+                <div class="card-central__container__container">
+                    <img class="card-central__container__container__foto" src="assets/rectangle-12.png" alt="Foto da experiência">
+                    <div class="card-central__container__container__legenda">
+                        <h3 class="card-central__container__container__legenda__titulo">Empresa</h3>
+                        <p class="card-central__container__container__legenda__paragrafo">1 a 7 m</p>
+                    </div>
+                </div>
+                <div class="card-central__container__lista">
+                        <div class="card-central__container__lista__item">
+                            <span class="material-symbols-outlined marcador">circle</span>
+                            <h3 class="card-central__container__lista__item__titulo">Fullstack Developer</h3>  
+                        </div>
+                        <div class="card-central__container__lista__dados">
+                            <h4 class="card-central__container__lista__dados__subtitulo">Tempo integral</h4>
+                            <p class="card-central__container__lista__dados__paragrafo">jan de 2022 - o momento •
+                                5 meses</p>
+                            <p class="card-central__container__lista__dados__paragrafo">Cidade, estado e país</p>
+                        </div>
+                        <div class="card-central__container__lista__item">
+                            <span class="material-symbols-outlined marcador">circle</span>
+                            <h3 class="card-central__container__lista__item__titulo">Fullstack Developer (JR)</h3>
+                        </div>
+                        <div class="card-central__container__lista__dados">
+                            <h4 class="card-central__container__lista__dados__subtitulo">Tempo integral</h4>
+                            <p class="card-central__container__lista__dados__paragrafo">jun de 2021 - jan de 2022
+                                • 8 meses</p>
+                            <p class="card-central__container__lista__dados__paragrafo">Cidade, estado e país</p>
+                        </div>
+                        <div class="card-central__container__lista__item">
+                            <span class="material-symbols-outlined marcador">circle</span>
+                            <h3 class="card-central__container__lista__item__titulo">Front-end Developer</h3>
+                        </div>
+                        <div class="card-central__container__lista__dados">
+                            <h4 class="card-central__container__lista__dados__subtitulo">Tempo integral</h4>
+                            <p class="card-central__container__lista__dados__paragrafo">jan de 2021 - jun de 2021
+                                • 6 meses</p>
+                            <p class="card-central__container__lista__dados__paragrafo">Cidade, estado e país</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="card-central card-central__formacao">
+            <h2 class="card-central__titulo">Formação Acadêmica</h2>
+            <div class="card-central__container">
+                <img class="card-central__container__foto" src="assets/rectangle-13.png"
+                    alt="Foto da formação acadêmica">
+                <div class="card-central__container__legenda">
+                    <h3 class="card-central__container__legenda__titulo">Instituição de ensino</h3>
+                    <h4 class="card-central__container__legenda__subtitulo">Nome do curso</h4>
+                    <p class="card-central__container__legenda__paragrafo">2015 a 2019</p>
+                </div>
+            </div>
+        </section>
+        <section class="card-central card-central__idiomas">
+            <h2 class="card-central__titulo">Idiomas</h2>
+            <div class="card-central__container">
+                <div class="card-central__container__item">
+                    <h3 class="card-central__container__item__titulo">Português</h3>
+                    <p class="card-central__container__item__paragrafo">Fluente ou nativo</p>
+                </div>
+                <hr class="card-central__container__linha">
+                <div class="card-central__container__item">
+                    <h3 class="card-central__container__item__titulo">Inglês</h3>
+                    <p class="card-central__container__item__paragrafo">Intermediário</p>
+                </div>
+            </div>
         </section>
     </main>
     <aside>
         <section class="card-lateral">
-            <h3>As pessoas também viram</h3>
-            <div class="usuario">
-                <img src="assets/perfil-3.jpg" alt="Foto do Usuário">
-                <h4>Nome e sobrenome</h4>
-                <p>Título, cargo e tecnologias. Lorem Ipsum Dolor sit Amet</p>
-                <a class="botao-card-lateral" href="#">Enviar mensagem</a>
-            </div>
-            <div class="usuario">
-                <img src="assets/perfil-4.jpg" alt="Foto do Usuário">
-                <h4>Nome e sobrenome</h4>
-                <p>Título, cargo e tecnologias. Lorem Ipsum Dolor sit Amet</p>
-                <a class="botao-card-lateral" href="#">Enviar mensagem</a>
-            </div>
-            <div class="usuario">
-                <img src="assets/perfil-5.jpg" alt="Foto do Usuário">
-                <h4>Nome e sobrenome</h4>
-                <p>Título, cargo e tecnologias. Lorem Ipsum Dolor sit Amet</p>
-                <a class="botao-card-lateral" href="#">Enviar mensagem</a>
-            </div>
-            <div class="usuario">
-                <img src="assets/perfil-2.jpg" alt="Foto do Usuário">
-                <h4>Nome e sobrenome</h4>
-                <p>Título, cargo e tecnologias. Lorem Ipsum Dolor sit Amet</p>
-                <a class="botao-card-lateral" href="#">Enviar mensagem</a>
-            </div>
-            <div class="usuario">
-                <img src="assets/perfil-1.jpg" alt="Foto do Usuário">
-                <h4>Nome e sobrenome</h4>
-                <p>Título, cargo e tecnologias. Lorem Ipsum Dolor sit Amet</p>
-                <a class="botao-card-lateral" href="#">Enviar mensagem</a>
+            <h3 class="card-lateral__titulo">As pessoas também viram</h3>
+            <div class="card-lateral__container">
+                <div class="card-lateral__container__item">
+                    <img class="card-lateral__container__item__foto" src="assets/perfil-3.jpg" alt="Foto do Usuário">
+                    <div class="card-lateral__container__item__etiqueta">   
+                        <h4 class="card-lateral__container__item__etiqueta__titulo">Nome e sobrenome</h4>
+                        <p class="card-lateral__container__item__etiqueta__paragrafo">Título, cargo e tecnologias. Lorem Ipsum Dolor
+                            sit Amet</p>
+                        <button class="card-lateral__container__item__etiqueta__botao">Enviar mensagem</button>
+                    </div>
+                </div>
+                <div class="card-lateral__container__item">
+                    <img class="card-lateral__container__item__foto" src="assets/perfil-4.jpg" alt="Foto do Usuário">
+                    <div class="card-lateral__container__item__etiqueta">
+                        <h4 class="card-lateral__container__item__etiqueta__titulo">Nome e sobrenome</h4>
+                        <p class="card-lateral__container__item__etiqueta__paragrafo">Título, cargo e tecnologias. Lorem Ipsum Dolor
+                        sit Amet</p>
+                        <button class="card-lateral__container__item__etiqueta__botao">Enviar mensagem</button>
+                    </div>
+                </div>
+                <div class="card-lateral__container__item">
+                    <img class="card-lateral__container__item__foto" src="assets/perfil-5.jpg" alt="Foto do Usuário">
+                    <div class="card-lateral__container__item__etiqueta">
+                        <h4 class="card-lateral__container__item__etiqueta__titulo">Nome e sobrenome</h4>
+                        <p class="card-lateral__container__item__etiqueta__paragrafo">Título, cargo e tecnologias. Lorem Ipsum Dolor
+                        sit Amet</p>
+                         <button class="card-lateral__container__item__etiqueta__botao">Enviar mensagem</button>
+                    </div>
+                </div>
+                <div class="card-lateral__container__item">
+                    <img class="card-lateral__container__item__foto" src="assets/perfil-2.jpg" alt="Foto do Usuário">
+                    <div class="card-lateral__container__item__etiqueta">
+                        <h4 class="card-lateral__container__item__etiqueta__titulo">Nome e sobrenome</h4>
+                        <p class="card-lateral__container__item__etiqueta__paragrafo">Título, cargo e tecnologias. Lorem Ipsum Dolor
+                        sit Amet</p>
+                        <button class="card-lateral__container__item__etiqueta__botao">Enviar mensagem</button>
+                    </div>
+                </div>
+                <div class="card-lateral__container__item">
+                    <img class="card-lateral__container__item__foto" src="assets/perfil-1.jpg" alt="Foto do Usuário">
+                    <div class="card-lateral__container__item__etiqueta">
+                        <h4 class="card-lateral__container__item__etiqueta__titulo">Nome e sobrenome</h4>
+                        <p class="card-lateral__container__item__etiqueta__paragrafo">Título, cargo e tecnologias. Lorem Ipsum Dolor
+                        sit Amet</p>
+                        <button class="card-lateral__container__item__etiqueta__botao">Enviar mensagem</button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="card-lateral">
-            <h3>Pessoas que talvez você conheça</h3>
-            <div class="usuario">
-                <img src="assets/rectangle-11.png" alt="Foto do Usuário">
-                <h4>Nome e sobrenome</h4>
-                <p>Título, cargo e tecnologias. Lorem Ipsum Dolor sit Amet</p>
-                <a class="botao-card-lateral" href="#">Enviar mensagem</a>
-            </div>
-            <div class="usuario">
-                <img src="assets/perfil-3.jpg" alt="Foto do Usuário">
-                <h4>Nome e sobrenome</h4>
-                <p>Título, cargo e tecnologias. Lorem Ipsum Dolor sit Amet</p>
-                <a class="botao-card-lateral" href="#">Enviar mensagem</a>
-            </div>
-            <div class="usuario">
-                <img src="assets/perfil-2.jpg" alt="Foto do Usuário">
-                <h4>Nome e sobrenome</h4>
-                <p>Título, cargo e tecnologias. Lorem Ipsum Dolor sit Amet</p>
-                <a class="botao-card-lateral" href="#">Enviar mensagem</a>
-            </div>
-            <div class="usuario">
-                <img src="assets/perfil-5.jpg" alt="Foto do Usuário">
-                <h4>Nome e sobrenome</h4>
-                <p>Título, cargo e tecnologias. Lorem Ipsum Dolor sit Amet</p>
-                <a class="botao-card-lateral" href="#">Enviar mensagem</a>
-            </div>
-            <div class="usuario">
-                <img src="assets/perfil-4.jpg" alt="Foto do Usuário">
-                <h4>Nome e sobrenome</h4>
-                <p>Título, cargo e tecnologias. Lorem Ipsum Dolor sit Amet</p>
-                <a class="botao-card-lateral" href="#">Enviar mensagem</a>
+            <h3 class="card-lateral__titulo">Pessoas que talvez você conheça</h3>
+            <div class="card-lateral__container">
+                <div class="card-lateral__container__item">
+                    <img class="card-lateral__container__item__foto" src="assets/rectangle-11.png" alt="Foto do Usuário">
+                    <div class="card-lateral__container__item__etiqueta">
+                        <h4 class="card-lateral__container__item__etiqueta__titulo">Nome e sobrenome</h4>
+                        <p class="card-lateral__container__item__etiqueta__paragrafo">Título, cargo e tecnologias. Lorem Ipsum Dolor
+                        sit Amet</p>
+                        <button class="card-lateral__container__item__etiqueta__botao">Conectar</button>
+                    </div>
+                </div>
+                <div class="card-lateral__container__item">
+                    <img class="card-lateral__container__item__foto" src="assets/perfil-3.jpg" alt="Foto do Usuário">
+                    <div class="card-lateral__container__item__etiqueta">
+                        <h4 class="card-lateral__container__item__etiqueta__titulo">Nome e sobrenome</h4>
+                        <p class="card-lateral__container__item__etiqueta__paragrafo">Título, cargo e tecnologias. Lorem Ipsum Dolor
+                        sit Amet</p>
+                        <button class="card-lateral__container__item__etiqueta__botao">Conectar</button>
+                    </div>
+                </div>
+                <div class="card-lateral__container__item">
+                    <img class="card-lateral__container__item__foto" src="assets/perfil-2.jpg" alt="Foto do Usuário">
+                    <div class="card-lateral__container__item__etiqueta">
+                        <h4 class="card-lateral__container__item__etiqueta__titulo">Nome e sobrenome</h4>
+                        <p class="card-lateral__container__item__etiqueta__paragrafo">Título, cargo e tecnologias. Lorem Ipsum Dolor
+                        sit Amet</p>
+                        <button class="card-lateral__container__item__etiqueta__botao">Conectar</button>
+                    </div>
+                </div>
+                <div class="card-lateral__container__item">
+                    <img class="card-lateral__container__item__foto" src="assets/perfil-5.jpg" alt="Foto do Usuário">
+                    <div class="card-lateral__container__item__etiqueta">
+                        <h4 class="card-lateral__container__item__etiqueta__titulo">Nome e sobrenome</h4>
+                        <p class="card-lateral__container__item__etiqueta__paragrafo">Título, cargo e tecnologias. Lorem Ipsum Dolor
+                        sit Amet</p>
+                        <button class="card-lateral__container__item__etiqueta__botao">Conectar</button>
+                    </div>
+                </div>
+                <div class="card-lateral__container__item">
+                    <img class="card-lateral__container__item__foto" src="assets/perfil-4.jpg" alt="Foto do Usuário">
+                    <div class="card-lateral__container__item__etiqueta">
+                        <h4 class="card-lateral__container__item__etiqueta__titulo">Nome e sobrenome</h4>
+                        <p class="card-lateral__container__item__etiqueta__paragrafo">Título, cargo e tecnologias. Lorem Ipsum Dolor
+                        sit Amet</p>
+                        <button class="card-lateral__container__item__etiqueta__botao">Conectar</button>
+                    </div>
+                </div>
             </div>
         </section>
     </aside>
